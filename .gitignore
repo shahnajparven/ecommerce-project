@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+/design/node_modules
+/design/.pnp
+/design/.pnp.js
+
+# testing
+/design/coverage
+
+# production
+/design/build
+
+# misc
+/node/config/config.env
+/node/.DS_Store
+/node/.env.local
+/design/.env.development.local
+/design/.env.test.local
+/design/.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

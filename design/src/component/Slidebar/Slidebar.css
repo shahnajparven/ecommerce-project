@@ -1,0 +1,53 @@
+.slidebar{
+    display: flex;
+    height: 100vh;  
+    width: 18%;
+    background-color: #393D40;
+    display: flex;
+    padding-top: 8vh;
+  }
+   .left-dashboard{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-left: 50px;
+    gap:1rem;
+    padding-top: 4vh;
+  }
+ 
+  .left-dashboard a{
+  text-decoration: none;
+ 
+  color: white;
+  }
+  .left-dashboard a > P {
+    font-size: 200 1rem;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .left-dashboard > P {
+    Size:200 4rem;
+  }
+  .left-dashboard a > p > svg {
+    margin-right: 0.5rem;
+  }
+  .left-dashboard a > p:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .left-dashboard > :nth-child(1) {
+    font-weight: 100;
+    gap: 10px;
+  }
+  @media screen and (max-width: 680px) {
+      
+    .left-dashboard a > p > span{
+      display: none;
+    }
+    .left-dashboard{
+      padding-left: 30px;
+    }
+    
+}

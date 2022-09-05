@@ -1,0 +1,92 @@
+.product{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  padding-top: 5vh;
+}
+.productListContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 15px;
+  }
+  
+  #productListHeading {
+    font: 400 2rem "Roboto";
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color:  rgba(0, 0, 0, 0.637);
+    transition: all 0.5s;
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .productListTable {
+    background-color: white;
+    border: none !important;
+  }
+  .productListTable div {
+    font: 300 1vmax "Roboto";
+    color: black;
+    border: none !important;
+  }
+  
+  .productListTable a,
+  .productListTable button {
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  .productListTable a:hover {
+    color: gray;
+  }
+  .productListTable a:hover {
+    color: tomato;
+  }
+  
+  
+  .productListTable button:hover {
+    color: rgb(236, 30, 30);
+  }
+
+  .MuiDataGrid-columnHeader {
+   background-color: #393D40;
+  }
+
+  #createProductFormFile > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #createProductFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createProductFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  #createProductFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createProductFormImage > img {
+    width: 3vmax;
+    margin: 0 0.5vmax;
+  }
+  

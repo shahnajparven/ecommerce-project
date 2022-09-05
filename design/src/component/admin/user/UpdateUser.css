@@ -1,0 +1,13 @@
+.updateuser{
+    display: flex;
+}
+
+.createuserForm{
+    margin-top: 20vh;
+    margin-left: 20%;
+    width: 70%;
+}
+.createuserForm > div > input,select{
+    padding: 10px;
+ 
+}

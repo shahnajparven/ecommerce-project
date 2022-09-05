@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 1px 5px 0px lightgray;
+    z-index: 1;
+    position: fixed;
+  }
+  .login{
+    width: 10%;
+    margin-top: 1rem;
+    color: gray;
+  }
+  .login a{
+   text-decoration: none;
+   color: gray;
+  }
+  .logo-name{
+    display: flex;
+    width: 100%;
+    margin-left: 3rem;
+  } 
+  
+  
+
+  .logo-name a > P {
+    font-size: 200 1rem;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .logo-name > P {
+    Size:200 4rem;
+  }
+  .logo-name a > p > svg {
+    margin-right: 0.5rem;
+  }
+  .logo-name a {
+   text-decoration: none;
+   color: #393D40;
+  }
+  .dash{
+   height: 5vh;
+   width: 6vmax;
+   margin-top: 2.5vh;
+   margin-right: 2vmax;
+    border: none;
+    background-color: #393D40;
+    border-radius: 3px;
+  }
+  .dash a{
+    text-decoration: none;
+    color: white !important;
+  }
+  @media screen and (max-width: 680px) {
+    .login{   
+      width: 100%;  
+      margin-left: 60%; 
+    }
+    .logo-name{
+     margin-left: 5%;
+    }  
+  }

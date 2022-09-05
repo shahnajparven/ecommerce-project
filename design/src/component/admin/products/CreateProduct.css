@@ -1,0 +1,90 @@
+.create-product {
+    display: flex;
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.createproduct-container {
+    height: 70vh;
+    width: 70%;
+    background-color: white;
+    box-shadow: 3px 1px 5px 0px lightgray;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+.createproduct-container h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 12%;
+}
+.button1 {
+    margin-left: 25%;
+    margin-top: 4vh;
+    padding: 15px;
+    border: none;
+}
+
+.createProductForm>div> input,
+textarea ,select{
+    padding: 1vmax 4vmax;
+    width: 58%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    outline: none;
+    margin: 5px; 
+}
+  .createProductForm svg {
+    margin-right: 0.5rem;
+    margin-top: 3vh;
+  }
+.createProductForm {   
+    margin: auto;
+    padding-left: 15vmax;
+    padding-top: 3vmax;
+    justify-content: space-evenly;
+    background-color: white;
+  }
+  
+  .createProductForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  #createProductFormFile > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #createProductFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createProductFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  #createProductFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createProductFormImage > img {
+    width: 3vmax;
+    margin: 0 0.5vmax;
+  }
