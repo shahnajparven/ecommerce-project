@@ -20,7 +20,7 @@ const Slidebar = () => {
         <div className='slidebar'>
             <div className='left-dashboard'>
 
-                <Link to="App">
+                <Link to="/route/Routett">
                     <p>
                         <DashboardIcon /> <span>Dashboard</span>
                     </p>
@@ -50,7 +50,7 @@ const Slidebar = () => {
                     defaultExpandIcon={<ImportExportIcon />}
                 >
                     <TreeItem nodeId="1" label="Users">
-                        <Link to="/admin/product/UserList">
+                        <Link to="/admin/user/UserList">
                             <TreeItem nodeId="2" label="All" icon={<PeopleIcon />} />
                         </Link>
 

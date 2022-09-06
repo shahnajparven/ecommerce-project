@@ -15,6 +15,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { DELETE_PRODUCT_RESET } from "../../constants/productConstants";
 
+
 const ProductsList = ({ history }) => {
 
 
@@ -43,7 +44,7 @@ const ProductsList = ({ history }) => {
 
     if (isDeleted) {
       alert.success("Product Deleted Successfully");
-      history.push("/App");
+      history.push("/admin/product/ProductList");
       dispatch({ type: DELETE_PRODUCT_RESET });
     }
 
@@ -88,7 +89,7 @@ const ProductsList = ({ history }) => {
       renderCell: (params) => {
         return (
           <>
-            <Link to={`/admin/product/${params.getValue(params.id, "id")}`}>
+            <Link to={`/admin/product/UpdateProduct/${params.getValue(params.id, "id")}`}>
               <EditIcon />
 
             </Link>

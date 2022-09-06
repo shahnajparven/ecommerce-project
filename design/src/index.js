@@ -25,7 +25,7 @@ ReactDOM.render(
     <AlertProvider template={AlertTemplate} {...options}>
       <Provider store={store}>
 
-        <Routett />
+        <App />
 
       </Provider>
     </AlertProvider>,

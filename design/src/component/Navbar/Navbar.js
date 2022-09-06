@@ -9,8 +9,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Navbar = () => {
   return (
     <>
-    
-
     <div className='navbar'>
        
         <div className='logo-name'>
@@ -22,7 +20,7 @@ const Navbar = () => {
           </Link> 
         </div>
         <button className='dash'>
-            <Link to='App'> 
+            <Link to='/route/Routett'> 
               Admin
         </Link>      
         </button>
@@ -32,7 +30,7 @@ const Navbar = () => {
         </Link>      
         </button> */}
         <div className='login'>
-            <Link to='/admin/authentication/LoginSignp'> 
+            <Link to='/admin/authentication/LoginSignup'> 
         <PeopleIcon />
         </Link>   
          

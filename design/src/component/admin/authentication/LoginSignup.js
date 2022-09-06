@@ -39,8 +39,9 @@ const LoginSignup = ({history, location}) => {
   
     const loginSubmit = (e) => {
       e.preventDefault();
+      alert.success("Login Successfully");
       dispatch(login(loginEmail, loginPassword));
-      history.push("/app");
+      history.push("/");
     };
   
     const registerSubmit = (e) => {
@@ -72,7 +73,7 @@ const LoginSignup = ({history, location}) => {
       }
     };
   
-    const redirect = location.search ? location.search.split("=")[1] : "/app";
+    const redirect = location.search ? location.search.split("=")[1] : "/";
     useEffect(() => {
       if (error) {
         alert.error(error);
@@ -80,10 +81,13 @@ const LoginSignup = ({history, location}) => {
       }
   
       if (isAuthenticated) {
-        history.push(redirect);
+        //alert.success("Registration Successfully");
+        history.push(loginTab);
       }
-    }, [dispatch, error, alert, history, isAuthenticated, redirect]);
+    }, [dispatch, error, alert, history, isAuthenticated]);
   
+
+
     const switchTabs = (e, tab) => {
       if (tab === "login") {
         switcherTab.current.classList.add("shiftToNeutral");
@@ -186,6 +190,7 @@ const LoginSignup = ({history, location}) => {
                       type="file"
                       name="avatar"
                       accept="image/*"
+                      required
                       onChange={registerDataChange}
                     />
                   </div>

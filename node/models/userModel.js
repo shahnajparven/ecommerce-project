@@ -15,8 +15,26 @@ const userSchema = new mongoose.Schema({
   email: {
     type: String,
     required: [true, "Please Enter Your Email"],
-    unique: true,
+    unique: true, 
     validate: [validator.isEmail, "Please Enter a valid Email"],
+
+  //   validate: {
+  //     validator: function() {
+  //       return new Promise((res, rej) =>{
+  //         User.findOne({email: this.email, _id: {$ne: this._id}})
+  //             .then(data => {
+  //                 if(data) {
+  //                     res(false)
+  //                 } else {
+  //                     res(true)
+  //                 }
+  //             })
+  //             .catch(err => {
+  //                 res(false)
+  //             })
+  //       })
+  //     }, message: 'Email Already Taken'
+  //   }
   },
   password: {
     type: String,
@@ -27,7 +45,7 @@ const userSchema = new mongoose.Schema({
   avatar: {
     public_id: {
       type: String,
-      required: true,
+      required: [true, "Please Enter Your Profile Image"]
     },
     url: {
       type: String,

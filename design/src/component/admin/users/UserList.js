@@ -44,7 +44,7 @@ const UserList = ({history}) => {
 
     if (isDeleted) {
       alert.success(message);
-      history.push("UserList");
+      history.push("/admin/user/UserList");
       dispatch({ type: DELETE_USER_RESET });
     }
 
@@ -92,7 +92,7 @@ const UserList = ({history}) => {
       renderCell: (params) => {
         return (
           <>
-            <Link to={`/admin/user/${params.getValue(params.id, "id")}`}>
+            <Link to={`/admin/user/UpdateUser/${params.getValue(params.id, "id")}`}>
               <EditIcon />
             </Link>
 
